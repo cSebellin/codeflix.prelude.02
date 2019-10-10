@@ -1,4 +1,4 @@
-module.exports = function without(array,...values){
+module.exports = function without(arr,...values){
 let arr1 = []
     for (const v of arr){
         if(values.includes(v) == false){

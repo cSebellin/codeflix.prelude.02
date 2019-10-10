@@ -1,11 +1,11 @@
 module.exports = function intersection(...arrays){
 
     let newArr =[]
-    const first_tab = arrays[0]
+    const [first_tab,...rest] = arrays // ou arrays.shift()
         for (const elt of first_tab){
             present = true
-            for (i = 1; i < arrays.length; i++ ){
-                if(!arrays[i].includes(elt)){
+            for (const currentArr of rest ){
+                if(currentArr.includes(elt)){
                     present=false
                 }
             }
