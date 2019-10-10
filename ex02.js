@@ -1,3 +1,3 @@
 module.exports = function initial(array, n=1){
-    array.splice(-n)
+    return array.slice(0, array.length-n) 
 }
