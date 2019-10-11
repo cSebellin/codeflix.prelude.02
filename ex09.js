@@ -4,7 +4,7 @@ module.exports = function difference(arr,...values){
             if(values.includes(v) == false){
                 arr1.push(v)
             }
-            else()
+            
         }
         return arr1
     }

@@ -6,7 +6,7 @@ module.exports = function intersection(...arrays){
             present = true
             for (const currentArr of rest ){
                 if(currentArr.includes(elt)){
-                    present=false
+                    present = false
                 }
             }
             if(present){

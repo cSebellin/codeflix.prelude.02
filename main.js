@@ -10,8 +10,9 @@ const keys = require("./ex12")
 const values = require("./ex13")
 const pair = require("./ex14")
 const invert = require("./ex15")
+const has = require("./ex17")
+const sample = require("./ex19")
 const map = require("./ex21")
-
 
 
 /*console.log("first : ")
@@ -52,7 +53,13 @@ console.log(pair({one : 1, two : 2, three: 3}))
 console.log(invert({one : 1, two : 2, three: 3}))
 
 console.log(pick({name: 'moe' , age :50, userid:'moel'}, 'name', 'age'))
-console.log(pick({name: 'moe' , age :50, userid:'moel'}, )) */
+console.log(pick({name: 'moe' , age :50, userid:'moel'}, )) 
 
 console.log(map([1, 2, 3], function(num){return num * 3}))
 console.log(map({one: 1, two : 2, three :3}, function(num, key){return num * 3}))
+
+console.log(has({a : 1, b : 2, c : 3}), function(key){return key =="b"})
+
+console.log(map([1, 2, 3, 4, 5 ], function(num){return num.length}))*/
+
+console.log(sample([1, 2, 3, 4, 5 ]))
